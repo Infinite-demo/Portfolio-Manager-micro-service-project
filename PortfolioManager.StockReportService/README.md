@@ -1,0 +1,2 @@
+# PortfolioManager.StockReportService
+PortfolioManager.StockReportService
