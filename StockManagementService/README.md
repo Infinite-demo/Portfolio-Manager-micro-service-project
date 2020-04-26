@@ -1,0 +1,2 @@
+# PortfolioManager.StockManagementService
+PortfolioManager.StockManagementService

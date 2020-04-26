@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="EventBus" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StockReport.Domain\StockReport.Domain.csproj" />
+    <ProjectReference Include="..\StockReport.Model\StockReport.Model.csproj" />
+    <ProjectReference Include="..\StockReport.Persistence\StockReport.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
