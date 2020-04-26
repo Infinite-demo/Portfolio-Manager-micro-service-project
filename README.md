@@ -1,12 +1,5 @@
 # Portfolio Manager micro service project
  
-|Projects|
-|------------|
-|[API Gateway](https://github.com/narottamgoyal/Portfolio-Manager-micro-service-project/tree/master/ApiGateway)|
-|[Stock Management Service](https://github.com/narottamgoyal/Portfolio-Manager-micro-service-project/tree/master/StockManagementService)|
-|[Stock Report Service](https://github.com/narottamgoyal/Portfolio-Manager-micro-service-project/tree/master/StockReportService)|
-|[User Management Service](https://github.com/narottamgoyal/Portfolio-Manager-micro-service-project/tree/master/UserManagementService)|
-
 [PPT Link](https://docs.google.com/presentation/d/1PuUXyMNn8C6ZuZKla-S_SfihIY_cWydaDdacV04UWwg/edit?usp=sharing)
 
 ![image](https://user-images.githubusercontent.com/2716202/80287939-1ce41880-8752-11ea-9d94-19fde65f1872.png)
