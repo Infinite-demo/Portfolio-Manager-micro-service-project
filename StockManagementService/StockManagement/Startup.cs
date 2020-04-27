@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Prometheus;
 using StockManagement.Config;
 using System;
 using System.Linq;
@@ -135,6 +136,7 @@ namespace StockManagement
             ConfigureEventBus(app);
 
             app.UseRouting();
+            app.UseHttpMetrics();
 
             app.UseAuthorization();
 
@@ -152,6 +154,7 @@ namespace StockManagement
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapMetrics();
             });
         }
 
