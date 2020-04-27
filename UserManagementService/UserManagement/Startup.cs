@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Prometheus;
 using UserManagement.Config;
 
 namespace UserManagement
@@ -71,6 +72,7 @@ namespace UserManagement
             app.UseConsul(_configurationSetting);
 
             app.UseRouting();
+            app.UseHttpMetrics();
 
             app.UseAuthorization();
 
@@ -88,6 +90,7 @@ namespace UserManagement
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapMetrics();
             });
         }
     }

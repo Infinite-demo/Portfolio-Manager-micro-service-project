@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Prometheus;
 using Service.Events;
 using StockReport.Config;
 using StockReport.EventHandlers;
@@ -166,6 +167,7 @@ namespace StockReport
             ConfigureEventBus(app);
 
             app.UseRouting();
+            app.UseHttpMetrics();
 
             app.UseAuthorization();
 
@@ -183,6 +185,7 @@ namespace StockReport
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapMetrics();
             });
         }
 
