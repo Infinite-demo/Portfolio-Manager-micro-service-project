@@ -1,0 +1,11 @@
+{
+    "datacenter": "aisa",
+    "data_dir": ".\\consul_1.7.2_windows_amd64\\config",
+    "log_level": "INFO",
+    "node_name": "Infinite Demo",
+    "server": true,
+    "bind_addr": "<only IP>",
+    "bootstrap": true,
+    "ui": true,
+    "log_file" : "consul.log" 
+  }
